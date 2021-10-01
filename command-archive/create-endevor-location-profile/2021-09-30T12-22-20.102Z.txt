@@ -1,0 +1,19 @@
+Error:
+null
+StdErr:
+
+Data:
+Overwrote existing profile for zw.
+Profile created successfully! Path:
+/home/user/.zowe/profiles/endevor-location/zw.yaml
+
+[33minstance: [39m   ENDEVOR
+[33menvironment: [39mDEV
+[33msystem: [39m     MARBLES
+[33msubsystem: [39m  MARBLES
+[33mstageNumber: [39m1
+[33mcomment: [39m    CUST013
+[33mccid: [39m       CUST013
+[33mmaxrc: [39m      [34m0[39m
+
+Review the created profile and edit if necessary using the profile update command.

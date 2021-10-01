@@ -1,0 +1,9 @@
+Error:
+null
+StdErr:
+
+Data:
+[INFO] generate action executed in location: DEV/1/MARBLES/MARBLES on element: MARBLE13.COBOL
+[INFO] Running on host: 35.226.100.133:6002 instance: ENDEVOR
+[INFO] Endevor reports written in endevor-report-2021-09-30-134347.txt
+GENERATE of MARBLE13.COBOL finished with 0000 

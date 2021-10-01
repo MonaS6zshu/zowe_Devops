@@ -1,0 +1,56 @@
+Error:
+null
+StdErr:
+
+Data:
+{
+  "success": true,
+  "exitCode": 0,
+  "message": "",
+  "stdout": "Result #1\n\u001b[32m- \u001b[39m\n  \u001b[33mCOLOR: \u001b[39m    RUBY      \n  \u001b[33mINVENTORY: \u001b[39m\u001b[34m25\u001b[39m\n  \u001b[33mCOST: \u001b[39m     \u001b[34m5\u001b[39m\n\u001b[32m- \u001b[39m\n  \u001b[33mCOLOR: \u001b[39m    TURQUOISE \n  \u001b[33mINVENTORY: \u001b[39m\u001b[34m25\u001b[39m\n  \u001b[33mCOST: \u001b[39m     \u001b[34m5\u001b[39m\n\u001b[32m- \u001b[39m\n  \u001b[33mCOLOR: \u001b[39m    EMERALD   \n  \u001b[33mINVENTORY: \u001b[39m\u001b[34m25\u001b[39m\n  \u001b[33mCOST: \u001b[39m     \u001b[34m5\u001b[39m\n\u001b[32m- \u001b[39m\n  \u001b[33mCOLOR: \u001b[39m    SAPPHIRE  \n  \u001b[33mINVENTORY: \u001b[39m\u001b[34m25\u001b[39m\n  \u001b[33mCOST: \u001b[39m     \u001b[34m5\u001b[39m\n\u001b[32m- \u001b[39m\n  \u001b[33mCOLOR: \u001b[39m    AMETHYST  \n  \u001b[33mINVENTORY: \u001b[39m\u001b[34m25\u001b[39m\n  \u001b[33mCOST: \u001b[39m     \u001b[34m5\u001b[39m\n\u001b[32m- \u001b[39m\n  \u001b[33mCOLOR: \u001b[39m    BROWN     \n  \u001b[33mINVENTORY: \u001b[39m\u001b[34m1\u001b[39m\n  \u001b[33mCOST: \u001b[39m     \u001b[34m2\u001b[39m\n\u001b[32m- \u001b[39m\n  \u001b[33mCOLOR: \u001b[39m    VIOLET    \n  \u001b[33mINVENTORY: \u001b[39m\u001b[34m1\u001b[39m\n  \u001b[33mCOST: \u001b[39m     \u001b[34m2\u001b[39m\n\u001b[32m- \u001b[39m\n  \u001b[33mCOLOR: \u001b[39m    GREEN     \n  \u001b[33mINVENTORY: \u001b[39m\u001b[34m1\u001b[39m\n  \u001b[33mCOST: \u001b[39m     \u001b[34m2\u001b[39m\n\n\n",
+  "stderr": "",
+  "data": [
+    [
+      {
+        "COLOR": "RUBY      ",
+        "INVENTORY": 25,
+        "COST": 5
+      },
+      {
+        "COLOR": "TURQUOISE ",
+        "INVENTORY": 25,
+        "COST": 5
+      },
+      {
+        "COLOR": "EMERALD   ",
+        "INVENTORY": 25,
+        "COST": 5
+      },
+      {
+        "COLOR": "SAPPHIRE  ",
+        "INVENTORY": 25,
+        "COST": 5
+      },
+      {
+        "COLOR": "AMETHYST  ",
+        "INVENTORY": 25,
+        "COST": 5
+      },
+      {
+        "COLOR": "BROWN     ",
+        "INVENTORY": 1,
+        "COST": 2
+      },
+      {
+        "COLOR": "VIOLET    ",
+        "INVENTORY": 1,
+        "COST": 2
+      },
+      {
+        "COLOR": "GREEN     ",
+        "INVENTORY": 1,
+        "COST": 2
+      }
+    ]
+  ]
+}

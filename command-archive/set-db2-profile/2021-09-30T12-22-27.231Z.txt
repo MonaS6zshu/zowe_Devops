@@ -1,0 +1,6 @@
+Error:
+null
+StdErr:
+
+Data:
+The default profile for db2 set to zw

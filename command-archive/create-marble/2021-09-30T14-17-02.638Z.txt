@@ -1,0 +1,7 @@
+Error:
+null
+StdErr:
+
+Data:
+ +MARB002E Color (MAGENTA) already exists, UPDate or DELete it.
+

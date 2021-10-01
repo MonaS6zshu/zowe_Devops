@@ -1,0 +1,56 @@
+//
+// APIMSGS - url: http://35.226.100.133:6002/endevor/reports/1633005645-923707738-APIMSGS
+//
+
+1CA Endevor SCM Version 18.1.00        Copyright (C) 1986-2019 Broadcom. All Rights Reserved.      30SEP21 08:40:45     PAGE     1   
+                                       E N D E V O R   A P I   E X E C U T I O N   R E P O R T                                       
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+ 08:40:45  API0101I  BEGINNING OF API ACTION PROCESSING                                                                              
+           API0100I                                                                                                                  
+           API0100I  ADD      ELEMENT:                                                                                               
+           API0100I  'MARBLE13'                                                                                                      
+           API0100I     MESSAGE DDNAME: APIMSGS                                                                                      
+           API0100I     FROM DIR:                                                                                                    
+           API0100I  'via REST API'                                                                                                  
+           API0100I     FILE:                                                                                                        
+           API0100I  'tempfile'                                                                                                      
+           API0100I     FROM    DDNAME: **DYNM**                                                                                     
+           API0100I     TO      ENVIRONMENT: DEV                                                                                     
+           API0100I             SYSTEM: MARBLES                                                                                      
+           API0100I             SUBSYSTEM: MARBLES                                                                                   
+           API0100I             TYPE: COBOL                                                                                          
+           API0100I     OPTIONS                                                                                                      
+           API0100I             CCID: CUST013                                                                                        
+           API0100I             COMMENT: CUST013                                                                                     
+           API0100I             UPDATE IF PRESENT: Y                                                                                 
+           API0100I             OVERRIDE SIGNOUT: Y                                                                                  
+           API0100I             BYPASS GENERATE PROCESSOR: Y                                                                         
+           API0100I                                                                                                                  
+           API0100I  API ACTION REQUEST DATA SUCCESSFULLY PRINTED                                                                    
+           API0100I                                                                                                                  
+ 08:40:45  C1Y0015I  STARTING PARSE OF REQUEST CARDS                                                                                 
+                                                                                                                                     
+  STATEMENT #1                                                                                                                       
+ 08:40:45  C1Y0016I  REQUEST CARDS SUCCESSFULLY PARSED                                                                               
+                                                                                                                                     
+                                                                                                                                     
+ 08:40:45  C1G0202I  ACTION #1 / STMT #1                                                                                             
+ 08:40:45  C1G0203I     ADD      ELEMENT MARBLE13                                                                                    
+ 08:40:45  C1G0221I        FROM DIR:     via REST API                                                                                
+ 08:40:45  C1G0221I        FROM FILE:    tempfile                                                                                    
+ 08:40:45  C1G0204I        TO   ENVIRONMENT: DEV      SYSTEM: MARBLES  SUBSYSTEM: MARBLES  TYPE: COBOL    STAGE ID: 1                
+ 08:40:45  C1G0232I        OPTIONS:  OVERRIDE SIGNOUT, UPDATE, BYPASS GENERATE PROCESSOR                                             
+ 08:40:45  C1G0232I                  CCID: CUST013                                                                                   
+ 08:40:45  C1G0232I                  COMMENT: CUST013                                                                                
+ 08:40:46  C1G0265I  PROCESSOR GROUP LEMC2 FOR THIS ELEMENT WAS OBTAINED FROM PRIMARY ELEMENT RECORD                                 
+ 08:40:46  SMGR136I  ELEMENT VVLL 0101 CHANGES INCLUDE 1 LINES INSERTED AND 1 LINES DELETED                                          
+ 08:40:46  SMGR130I  ELEMENT VVLL 0101 CREATED AT LOCATION DEV/1/MARBLES/MARBLES/COBOL                                               
+ 08:40:46  SMGR127I  ELEMENT VVLL 0101 WRITTEN TO:                                                                                   
+ 08:40:46  C1G0000I     DATA SET PRODUCT.NDVR.MARBLES.MARBLES.D1.COBOL                                                               
+ 08:40:46  C1G0000I     MEMBER MARBLE13                                                                                              
+ 08:40:46  C1G1000I  FINGERPRINT#: 013464F200803EB2                                                                                  
+ 08:40:46  C1G0000I     PATH /u/users/cai/CASoftware/ESCM/EVENTS/                                                                    
+ 08:40:46  C1E0146I  THE END-2-END LOGGING PATH WAS NOT FOUND, LOGGING SKIPPED.                                                      
+ 08:40:46  C1G0200I  ELEMENT ACTION REQUEST PROCESSING COMPLETED, HIGHEST ENDEVOR RC WAS 0000                                        

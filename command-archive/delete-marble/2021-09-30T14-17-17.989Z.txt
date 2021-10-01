@@ -1,0 +1,7 @@
+Error:
+null
+StdErr:
+
+Data:
+ +MARB001E Color (MAGENTA) not found in inventory, CREate it.
+

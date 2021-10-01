@@ -1,0 +1,45 @@
+//
+// APIMSGS - url: http://35.226.100.133:6002/endevor/reports/1633005320-502398088-APIMSGS
+//
+
+1CA Endevor SCM Version 18.1.00        Copyright (C) 1986-2019 Broadcom. All Rights Reserved.      30SEP21 08:35:21     PAGE     1   
+                                       E N D E V O R   A P I   E X E C U T I O N   R E P O R T                                       
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+ 08:35:21  API0101I  BEGINNING OF API ACTION PROCESSING                                                                              
+           API0100I                                                                                                                  
+           API0100I  RETRIEVE ELEMENT:                                                                                               
+           API0100I  'MARBLE13'                                                                                                      
+           API0100I     MESSAGE DDNAME: APIMSGS                                                                                      
+           API0100I     FROM    ENVIRONMENT: DEV                                                                                     
+           API0100I             SYSTEM: MARBLES                                                                                      
+           API0100I             SUBSYSTEM: MARBLES                                                                                   
+           API0100I             TYPE: COBOL                                                                                          
+           API0100I             STAGE NUM: 1                                                                                         
+           API0100I     TO      DDNAME: **DYNM**                                                                                     
+           API0100I     OPTIONS                                                                                                      
+           API0100I             CCID: CUST013                                                                                        
+           API0100I             COMMENT: CUST013                                                                                     
+           API0100I             OVERRIDE SIGNOUT: Y                                                                                  
+           API0100I                                                                                                                  
+           API0100I  API ACTION REQUEST DATA SUCCESSFULLY PRINTED                                                                    
+           API0100I                                                                                                                  
+ 08:35:21  C1Y0015I  STARTING PARSE OF REQUEST CARDS                                                                                 
+                                                                                                                                     
+  STATEMENT #1                                                                                                                       
+ 08:35:21  C1Y0016I  REQUEST CARDS SUCCESSFULLY PARSED                                                                               
+                                                                                                                                     
+                                                                                                                                     
+ 08:35:21  C1G0202I  ACTION #1 / STMT #1                                                                                             
+ 08:35:21  C1G0203I     RETRIEVE ELEMENT MARBLE13                                                                                    
+ 08:35:21  C1G0204I        FROM ENVIRONMENT: DEV      SYSTEM: MARBLES  SUBSYSTEM: MARBLES  TYPE: COBOL    STAGE ID: 1                
+ 08:35:21  C1G0221I        TO   DIR:     via REST API                                                                                
+ 08:35:21  C1G0232I        OPTIONS:  OVERRIDE SIGNOUT, NEW ELEMENT NAME, NOSEARCH                                                    
+ 08:35:21  C1G0232I                  CCID: CUST013                                                                                   
+ 08:35:21  C1G0232I                  COMMENT: CUST013                                                                                
+ 08:35:21  C1G0275I  THE "OVERRIDE SIGNOUT" OPTION IS IN EFFECT. ELEMENT IS CURRENTLY SIGNED OUT TO CUST022                          
+ 08:35:21  C1G1000I  FINGERPRINT#: 013464F200649C4E                                                                                  
+ 08:35:22  C1G0000I     PATH /u/users/cai/CASoftware/ESCM/EVENTS/                                                                    
+ 08:35:22  C1E0146I  THE END-2-END LOGGING PATH WAS NOT FOUND, LOGGING SKIPPED.                                                      
+ 08:35:22  C1G0200I  ELEMENT ACTION REQUEST PROCESSING COMPLETED, HIGHEST ENDEVOR RC WAS 0000                                        

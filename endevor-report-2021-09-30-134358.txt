@@ -1,0 +1,362 @@
+//
+// APIMSGS - url: http://35.226.100.133:6002/endevor/reports/1633009464-846637307-APIMSGS
+//
+
+1CA Endevor SCM Version 18.1.00        Copyright (C) 1986-2019 Broadcom. All Rights Reserved.      30SEP21 09:44:17     PAGE     1   
+                                       E N D E V O R   A P I   E X E C U T I O N   R E P O R T                                       
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+ 09:44:17  API0101I  BEGINNING OF API ACTION PROCESSING                                                                              
+           API0100I  API SCL REQUEST                                                                                                 
+           API0100I     MESSAGE DDNAME: APIMSGS                                                                                      
+           API0100I     SCL TYPE: E                                                                                                  
+           API0100I  SCL COMMANDS:                                                                                                   
+           API0100I   GENERATE ELEMENT 'MARBLE13' FROM ENVIRONMENT 'DEV' SYSTEM 'MARBLES'                                            
+           API0100I   SUBSYSTEM 'MARBLES' TYPE 'LNK' STAGE NUMBER 1 OPTIONS CCID "CUST013"                                           
+           API0100I   COMMENT "CUST013" OVERRIDE SIGNOUT .                                                                           
+           API0100I                                                                                                                  
+ 09:44:17  API0102I  DISPATCHING API ACTION                                                                                          
+ 09:44:24  API0000I  PROCESSING COMPLETE - RC=00000 REASON=00000                                                                     
+
+//
+// C1MSGS1 - url: http://35.226.100.133:6002/endevor/reports/1633009464-846637307-C1MSGS1
+//
+
+1CA Endevor SCM Version 18.1.00        Copyright (C) 1986-2019 Broadcom. All Rights Reserved.      30SEP21 09:44:17     PAGE     1   
+                                      E N D E V O R   S Y N T A X   R E Q U E S T   R E P O R T                                      
+ REQUESTED BY: CUST013                                                                                                               
+                                                                                                                                     
+                                                                                                                                     
+           09:44:17  C1Y0015I  STARTING PARSE OF REQUEST CARDS                                                                       
+                                                                                                                                     
+            STATEMENT #1                                                                                                             
+             GENERATE ELEMENT 'MARBLE13' FROM ENVIRONMENT 'DEV' SYSTEM 'MARBLES'                                                     
+             SUBSYSTEM 'MARBLES' TYPE 'LNK' STAGE NUMBER 1 OPTIONS CCID "CUST013"                                                    
+             COMMENT "CUST013" OVERRIDE SIGNOUT .                                                                                    
+                                                                                                                                     
+            STATEMENT #2                                                                                                             
+            EOF STATEMENT GENERATED                                                                                                  
+           09:44:17  C1Y0016I  REQUEST CARDS SUCCESSFULLY PARSED                                                                     
+                                                                                                                                     
+1CA Endevor SCM Version 18.1.00        Copyright (C) 1986-2019 Broadcom. All Rights Reserved.      30SEP21 09:44:18     PAGE     1   
+                                           E N D E V O R   E X E C U T I O N   R E P O R T                                           
+ REQUESTED BY: CUST013                                                                                                               
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+           09:44:18  C1G0202I  ACTION #1 / STMT #1                                                                                   
+           09:44:18  C1G0203I     GENERATE ELEMENT MARBLE13                                                                          
+           09:44:18  C1G0204I        FROM ENVIRONMENT: DEV      SYSTEM: MARBLES  SUBSYSTEM: MARBLES  TYPE: LNK      STAGE ID: 1      
+           09:44:18  C1G0232I        OPTIONS:  OVERRIDE SIGNOUT                                                                      
+           09:44:18  C1G0232I                  CCID: CUST013                                                                         
+           09:44:18  C1G0232I                  COMMENT: CUST013                                                                      
+           09:44:20  C1G0265I  PROCESSOR GROUP LOAD FOR THIS ELEMENT WAS OBTAINED FROM PRIMARY ELEMENT RECORD                        
+           09:44:21  C1G0143I  BEGINNING EXECUTION OF GENERATE PROCESSOR GLNK OF GROUP LOAD.                                         
+                                                                                                                                     
+                                                                                                                                     
+           09:44:21  C1G0246I  PROCESSOR GLNK LOADED FROM PRODUCT.NDVR.EA.ADMIN.P1.LOADLIB                                           
+           09:44:21  C1G0247I    FOOTPRINT: ENV: PRD SYS: EA SBS: PROCESS ELM: GLNK TYPE: PROCESS STG NBR: 1                         
+           09:44:21  C1G0248I               VER: 0102 DATE: 04JAN21 07:22                                                            
+                                                                                                                                     
+                     C1G0249I  //GLNK     PROC PARMA=,                     CONPARMS first parms                                      
+                     C1G0249I  //              PARMZ=,                     CONPARMS last  parms                                      
+                     C1G0249I  //              RELINK=YES,                 RELINK all Impacted LOADS                                 
+                     C1G0249I  //              PFX='&#BASEPRFX.',          Endevor dsname prefix                                     
+                     C1G0249I  //              COBTYP='NONE',              Specify COBLE or COBII                                    
+                     C1G0249I  //              CLELKED='CEE.SCEELKED',     COBOL\LE CALL library                                     
+                     C1G0249I  //              CIILIB='IBMPROD.V1R4M0.COB2LIB',  COBOL II CALL lib                                   
+                     C1G0249I  //              SEQLIST='N',                Create sequential listing                                 
+                     C1G0249I  //              VIO='SYSDA',                UNIT= for utility data sets                               
+                     C1G0249I  //              SDFHLOAD='CICSSYS.CTS560.GA.CICS.SDFHLOAD', CICS,                                     
+                     C1G0249I  //              TRAINLIB='CICS.TRAIN.MARBLES.LOADLIB',                                                
+                     C1G0249I  //              SDSNLOAD='EOSDB2.DB2C10.SDSNLOAD',   DB2,                                             
+                     C1G0249I  //              XOBJLIB1='NULLFILE',        External object library                                   
+                     C1G0249I  //              XOBJLIB2='NULLFILE'         External object library                                   
+                     C1G0249I  //*                                                                                                   
+                     C1G0249I  //IFRELINK IF (&RELINK EQ 'YES') THEN                                                                 
+                     C1G0249I  //*                                                                                                   
+                     C1G0249I  //*====================================================================                               
+                     C1G0249I  //*        Allocate the output listing data set                                                       
+                     C1G0249I  //*====================================================================                               
+                     C1G0249I  //INITLIST EXEC PGM=BC1PDSIN,MAXRC=0                                                                  
+                     C1G0249I  //C1INIT01 DD   DSN=&&LNKLST,DISP=(,PASS),                                                            
+                     C1G0249I  //              SPACE=(CYL,(2,1)),                                                                    
+                     C1G0249I  //              DCB=(RECFM=FBA,LRECL=121,BLKSIZE=1210,DSORG=PS)                                       
+                     C1G0249I  //C1INIT02 DD   DSN=&&CPYLST,DISP=(,PASS),                                                            
+                     C1G0249I  //              SPACE=(CYL,(2,1)),                                                                    
+                     C1G0249I  //              DCB=(RECFM=FBA,LRECL=121,BLKSIZE=1210,DSORG=PS)                                       
+                     C1G0249I  //*--------------------------------------------------------------------                               
+                     C1G0249I  //*        Fetch LINK DECK from concat for System  (Required)                                         
+                     C1G0249I  //*--------------------------------------------------------------------                               
+                     C1G0249I  //SYSLIN   EXEC PGM=IEBUPDTE,MAXRC=0                                                                  
+                     C1G0249I  //SYSPRINT DD   DUMMY                                                                                 
+                     C1G0249I  //SYSIN    DD   *                                                                                     
+                     C1G0249I  ./  REPRO NEW=PS,NAME=&C1ELEMENT                                                                      
+                     C1G0249I  //SYSUT1   DD   DISP=SHR,DSN=&PFX..LNK,                                                               
+                     C1G0249I  //              MONITOR=COMPONENTS,ALLOC=PMAP                                                         
+                     C1G0249I  //SYSUT2   DD   DSN=&&SYSLIN,DISP=(,PASS),                                                            
+                     C1G0249I  //              SPACE=(TRK,(10,10)),                                                                  
+                     C1G0249I  //              DCB=(RECFM=FB,LRECL=80,BLKSIZE=27920)                                                 
+                     C1G0249I  //*====================================================================                               
+1CA Endevor SCM Version 18.1.00        Copyright (C) 1986-2019 Broadcom. All Rights Reserved.      30SEP21 09:44:21     PAGE     2   
+                                           E N D E V O R   E X E C U T I O N   R E P O R T                                           
+ REQUESTED BY: CUST013                                                                                                               
+                                                                                                                                     
+                                                                                                                                     
+                     C1G0249I  //*        LINK all impacted loads                                                                    
+                     C1G0249I  //*====================================================================                               
+                     C1G0249I  //RELINK   EXEC PGM=IEWL,MAXRC=4,                                                                     
+                     C1G0249I  //              PARM='LIST,MAP,XREF'                                                                  
+                     C1G0249I  //*--------------------------------------------------------------------                               
+                     C1G0249I  //*        Expand libraries needed by Binder.                                                         
+                     C1G0249I  //*!!!!!!! SYSLIB DD is last; can add to concatenation list inline !!!!                               
+                     C1G0249I  //*--------------------------------------------------------------------                               
+                     C1G0249I  //* -INC GLNKLIBS                                                                                     
+                     C1G0249I  //SYSLIN   DD   DSN=&&SYSLIN,DISP=(OLD,DELETE)                                                        
+                     C1G0249I  //SYSLMOD  DD   DISP=SHR,MONITOR=COMPONENTS,FOOTPRNT=CREATE,                                          
+                     C1G0249I  //              DSN=&PFX..LOADLIB                                                                     
+                     C1G0249I  //SYSUT1   DD   UNIT=&VIO,SPACE=(TRK,(1,1))                                                           
+                     C1G0249I  //SYSPRINT DD   DSN=&&LNKLST,DISP=(OLD,PASS)                                                          
+                     C1G0249I  //INCLIB   DD   DSN=&PFX..LKEDLIB,                                                                    
+                     C1G0249I  //              DISP=SHR,MONITOR=COMPONENTS,ALLOC=PMAP                                                
+                     C1G0249I  //INCMOD   DD   DSN=&PFX..OBJLIB(&C1ELEMENT),                                                         
+                     C1G0249I  //              DISP=OLD,MONITOR=COMPONENTS,ALLOC=PMAP                                                
+                     C1G0249I  //SYSLIB   DD   DISP=SHR,DSN=&#H..$EMPTY    Empty lib to start concat                                 
+                     C1G0249I  //       IF ('&C1PRGRP(1,2)' EQ 'PR') THEN                                                            
+                     C1G0249I  //         DD   DISP=SHR,DSN=&CIILIB        COBOL II CALL libarary                                    
+                     C1G0249I  //       ELSE                                                                                         
+                     C1G0249I  //         DD   DISP=SHR,DSN=&CLELKED       COBOL\LE CALL library                                     
+                     C1G0249I  //       ENDIF                                                                                        
+                     C1G0249I  //       IF (&XOBJLIB1 NE 'NULLFILE') THEN                                                            
+                     C1G0249I  //         DD   DISP=SHR,MONITOR=COMPONENTS,DSN=&XOBJLIB1  Ext obj lib                                
+                     C1G0249I  //       ENDIF                                                                                        
+                     C1G0249I  //       IF (&XOBJLIB2 NE 'NULLFILE') THEN                                                            
+                     C1G0249I  //         DD   DISP=SHR,MONITOR=COMPONENTS,DSN=&XOBJLIB2  Ext obj lib                                
+                     C1G0249I  //       ENDIF                                                                                        
+                     C1G0249I  //         DD   DISP=SHR,DSN=&SDFHLOAD,    CICS lib                                                   
+                     C1G0249I  //             MONITOR=COMPONENTS                                                                     
+                     C1G0249I  //         DD   DISP=SHR,DSN=&SDSNLOAD,    DB2  lib                                                   
+                     C1G0249I  //             MONITOR=COMPONENTS                                                                     
+                     C1G0249I  //*====================================================================                               
+                     C1G0249I  //*        Copy EXECUTABLE to the CICS Train Loadlib                                                  
+                     C1G0249I  //*====================================================================                               
+                     C1G0249I  //COPYCICS EXEC PGM=BSTCOPY                        TRAIN                                              
+                     C1G0249I  //SYSPRINT DD  DISP=(OLD,PASS),DSN=&&CPYLST                                                           
+                     C1G0249I  //SYSUT3   DD  UNIT=SYSDA,SPACE=(TRK,(5,5))                                                           
+                     C1G0249I  //SYSUT4   DD  UNIT=SYSDA,SPACE=(TRK,(5,5))                                                           
+                     C1G0249I  //IN       DD   DISP=SHR,MONITOR=COMPONENTS,                                                          
+                     C1G0249I  //              DSN=&PFX..LOADLIB                                                                     
+                     C1G0249I  //OUT      DD   DISP=SHR,MONITOR=COMPONENTS,FOOTPRNT=CREATE,                                          
+                     C1G0249I  //              DSN=&TRAINLIB                                                                         
+                     C1G0249I  //SYSIN    DD  *                                                                                      
+                     C1G0249I    COPY INDD=((IN,R)),OUTDD=OUT                                                                        
+                     C1G0249I    S M=&C1ELEMENT                                                                                      
+                     C1G0249I  /*                                                                                                    
+                     C1G0249I  //*====================================================================                               
+                     C1G0249I  //*        Copy listing to .LLISTLIB data set                                                         
+                     C1G0249I  //*====================================================================                               
+                     C1G0249I  //CONLIST  EXEC PGM=CONLIST,PARM=STORE,COND=EVEN                                                      
+                     C1G0249I  //C1LLIBO  DD   DSN=&PFX..LLISTLIB,                                                                   
+                     C1G0249I  //              DISP=OLD,MONITOR=COMPONENTS,FOOTPRNT=CREATE                                           
+1CA Endevor SCM Version 18.1.00        Copyright (C) 1986-2019 Broadcom. All Rights Reserved.      30SEP21 09:44:21     PAGE     3   
+                                           E N D E V O R   E X E C U T I O N   R E P O R T                                           
+ REQUESTED BY: CUST013                                                                                                               
+                                                                                                                                     
+                                                                                                                                     
+                     C1G0249I  //C1BANNER DD   UNIT=&VIO,SPACE=(TRK,(1,1)),                                                          
+                     C1G0249I  //              DCB=(RECFM=FBA,LRECL=121,BLKSIZE=6171,DSORG=PS)                                       
+                     C1G0249I  //LIST01   DD   DSN=&&LNKLST,DISP=(OLD,PASS)                                                          
+                     C1G0249I  //LIST02   DD   DSN=&&CPYLST,DISP=(OLD,PASS)                                                          
+                     C1G0249I  //*====================================================================                               
+                     C1G0249I  //*        Copy listing to sequential ds if PROD STAGE 2 & requested                                  
+                     C1G0249I  //*====================================================================                               
+                     C1G0249I  //       IF (&C1EN EQ 'PRD') AND (&C1S# EQ '2') AND                                                   
+                     C1G0249I  //            (&SEQLIST EQ 'Y') THEN                                                                  
+                     C1G0249I  //CONLIST2 EXEC PGM=CONLIST,PARM=PRINT,COND=EVEN                                                      
+                     C1G0249I  //C1PRINT  DD   DSN=&#LISTDSN,DISP=(NEW,CATLG),                                                       
+                     C1G0249I  //              SPACE=(TRK,(3,4),RLSE),                                                               
+                     C1G0249I  //              DCB=(RECFM=FBA,LRECL=133,BLKSIZE=0,DSORG=PS)                                          
+                     C1G0249I  //C1BANNER DD   UNIT=&VIO,SPACE=(TRK,(1,1)),                                                          
+                     C1G0249I  //              DCB=(RECFM=FBA,LRECL=121,BLKSIZE=6171,DSORG=PS)                                       
+                     C1G0249I  //LIST01   DD   DSN=&&LNKLST,DISP=(OLD,DELETE)                                                        
+                     C1G0249I  //       ENDIF                                                                                        
+                     C1G0249I  //*                                                                                                   
+                     C1G0249I  //RELINK ELSE                                                                                         
+                     C1G0249I  //NORELINK EXEC PGM=IEFBR14                                                                           
+                     C1G0249I  //RELINK ENDIF                                                                                        
+                                                                                                                                     
+           09:44:21  C1G0006I  SYMBOLIC SUBSTITUTION:                                                                                
+           09:44:21  C1G0007I    SYMBOLIC CIILIB DEFINED BY PROCESSOR: IBMPROD.V1R4M0.COB2LIB                                        
+           09:44:21  C1G0007I    SYMBOLIC CLELKED DEFINED BY PROCESSOR: CEE.SCEELKED                                                 
+           09:44:21  C1G0007I    SYMBOLIC COBTYP DEFINED BY PROCESSOR: NONE                                                          
+           09:44:21  C1G0007I    SYMBOLIC PARMA DEFINED BY PROCESSOR:                                                                
+           09:44:21  C1G0007I    SYMBOLIC PARMZ DEFINED BY PROCESSOR:                                                                
+           09:44:21  C1G0007I    SYMBOLIC PFX DEFINED BY PROCESSOR: &#BASEPRFX.                                                      
+           09:44:21  C1G0007I    SYMBOLIC RELINK DEFINED BY PROCESSOR: YES                                                           
+           09:44:21  C1G0007I    SYMBOLIC SDFHLOAD OVERRIDDEN BY GROUP: CICSSYS.CTS520.GA.CICS.SDFHLOAD                              
+           09:44:21  C1G0007I    SYMBOLIC SDSNLOAD DEFINED BY PROCESSOR: EOSDB2.DB2C10.SDSNLOAD                                      
+           09:44:21  C1G0007I    SYMBOLIC SEQLIST DEFINED BY PROCESSOR: N                                                            
+           09:44:21  C1G0007I    SYMBOLIC TRAINLIB DEFINED BY PROCESSOR: CICS.TRAIN.MARBLES.LOADLIB                                  
+           09:44:21  C1G0007I    SYMBOLIC VIO DEFINED BY PROCESSOR: SYSDA                                                            
+           09:44:21  C1G0007I    SYMBOLIC XOBJLIB1 DEFINED BY PROCESSOR: NULLFILE                                                    
+           09:44:21  C1G0007I    SYMBOLIC XOBJLIB2 DEFINED BY PROCESSOR: NULLFILE                                                    
+           09:44:21  C1G0011I    PROCESSOR SYMBOLIC SUBSTITUTION OCCURRED -                                                          
+                     C1G0009I      ORIGINAL    : &RELINK                                                                             
+                     C1G0009I      SUBSTITUTED : YES                                                                                 
+                     C1G0009I      ORIGINAL    : &&C1VIOUNIT                                                                         
+                     C1G0009I      SUBSTITUTED : SYSDA                                                                               
+                     C1G0009I      ORIGINAL    : ./  REPRO NEW=PS,NAME=&C1ELEMENT                                                    
+                     C1G0009I      SUBSTITUTED : ./  REPRO NEW=PS,NAME=MARBLE13                                                      
+                     C1G0009I      ORIGINAL    : &PFX..LNK                                                                           
+                     C1G0009I      SUBSTITUTED : PRODUCT.NDVR.MARBLES.MARBLES.D1.LNK                                                 
+                     C1G0009I      ORIGINAL    : &PFX..LNK                                                                           
+                     C1G0009I      SUBSTITUTED : PRODUCT.NDVR.MARBLES.MARBLES.D2.LNK                                                 
+                     C1G0009I      ORIGINAL    : &PFX..LNK                                                                           
+                     C1G0009I      SUBSTITUTED : PRODUCT.NDVR.MARBLES.MARBLES.Q1.LNK                                                 
+                     C1G0009I      ORIGINAL    : &PFX..LNK                                                                           
+                     C1G0009I      SUBSTITUTED : PRODUCT.NDVR.MARBLES.MARBLES.Q2.LNK                                                 
+                     C1G0009I      ORIGINAL    : &PFX..LNK                                                                           
+                     C1G0009I      SUBSTITUTED : PRODUCT.NDVR.MARBLES.MARBLES.P1.LNK                                                 
+                     C1G0009I      ORIGINAL    : &PFX..LNK                                                                           
+1CA Endevor SCM Version 18.1.00        Copyright (C) 1986-2019 Broadcom. All Rights Reserved.      30SEP21 09:44:21     PAGE     4   
+                                           E N D E V O R   E X E C U T I O N   R E P O R T                                           
+ REQUESTED BY: CUST013                                                                                                               
+                                                                                                                                     
+                                                                                                                                     
+                     C1G0009I      SUBSTITUTED : PRODUCT.NDVR.MARBLES.MARBLES.P2.LNK                                                 
+                     C1G0009I      ORIGINAL    : &PFX..LOADLIB                                                                       
+                     C1G0009I      SUBSTITUTED : PRODUCT.NDVR.MARBLES.MARBLES.D1.LOADLIB                                             
+                     C1G0009I      ORIGINAL    : &VIO                                                                                
+                     C1G0009I      SUBSTITUTED : SYSDA                                                                               
+                     C1G0009I      ORIGINAL    : &PFX..LKEDLIB                                                                       
+                     C1G0009I      SUBSTITUTED : PRODUCT.NDVR.MARBLES.MARBLES.D1.LKEDLIB                                             
+                     C1G0009I      ORIGINAL    : &PFX..LKEDLIB                                                                       
+                     C1G0009I      SUBSTITUTED : PRODUCT.NDVR.MARBLES.MARBLES.D2.LKEDLIB                                             
+                     C1G0009I      ORIGINAL    : &PFX..LKEDLIB                                                                       
+                     C1G0009I      SUBSTITUTED : PRODUCT.NDVR.MARBLES.MARBLES.Q1.LKEDLIB                                             
+                     C1G0009I      ORIGINAL    : &PFX..LKEDLIB                                                                       
+                     C1G0009I      SUBSTITUTED : PRODUCT.NDVR.MARBLES.MARBLES.Q2.LKEDLIB                                             
+                     C1G0009I      ORIGINAL    : &PFX..LKEDLIB                                                                       
+                     C1G0009I      SUBSTITUTED : PRODUCT.NDVR.MARBLES.MARBLES.P1.LKEDLIB                                             
+                     C1G0009I      ORIGINAL    : &PFX..LKEDLIB                                                                       
+                     C1G0009I      SUBSTITUTED : PRODUCT.NDVR.MARBLES.MARBLES.P2.LKEDLIB                                             
+                     C1G0009I      ORIGINAL    : &PFX..OBJLIB                                                                        
+                     C1G0009I      SUBSTITUTED : PRODUCT.NDVR.MARBLES.MARBLES.D1.OBJLIB                                              
+                     C1G0009I      ORIGINAL    : &C1ELEMENT                                                                          
+                     C1G0009I      SUBSTITUTED : MARBLE13                                                                            
+                     C1G0009I      ORIGINAL    : &PFX..OBJLIB                                                                        
+                     C1G0009I      SUBSTITUTED : PRODUCT.NDVR.MARBLES.MARBLES.D2.OBJLIB                                              
+                     C1G0009I      ORIGINAL    : &C1ELEMENT                                                                          
+                     C1G0009I      SUBSTITUTED : MARBLE13                                                                            
+                     C1G0009I      ORIGINAL    : &PFX..OBJLIB                                                                        
+                     C1G0009I      SUBSTITUTED : PRODUCT.NDVR.MARBLES.MARBLES.Q1.OBJLIB                                              
+                     C1G0009I      ORIGINAL    : &C1ELEMENT                                                                          
+                     C1G0009I      SUBSTITUTED : MARBLE13                                                                            
+                     C1G0009I      ORIGINAL    : &PFX..OBJLIB                                                                        
+                     C1G0009I      SUBSTITUTED : PRODUCT.NDVR.MARBLES.MARBLES.Q2.OBJLIB                                              
+                     C1G0009I      ORIGINAL    : &C1ELEMENT                                                                          
+                     C1G0009I      SUBSTITUTED : MARBLE13                                                                            
+                     C1G0009I      ORIGINAL    : &PFX..OBJLIB                                                                        
+                     C1G0009I      SUBSTITUTED : PRODUCT.NDVR.MARBLES.MARBLES.P1.OBJLIB                                              
+                     C1G0009I      ORIGINAL    : &C1ELEMENT                                                                          
+                     C1G0009I      SUBSTITUTED : MARBLE13                                                                            
+                     C1G0009I      ORIGINAL    : &PFX..OBJLIB                                                                        
+                     C1G0009I      SUBSTITUTED : PRODUCT.NDVR.MARBLES.MARBLES.P2.OBJLIB                                              
+                     C1G0009I      ORIGINAL    : &C1ELEMENT                                                                          
+                     C1G0009I      SUBSTITUTED : MARBLE13                                                                            
+                     C1G0009I      ORIGINAL    : &#H..$EMPTY                                                                         
+                     C1G0009I      SUBSTITUTED : PRODUCT.NDVR.$EMPTY                                                                 
+                     C1G0009I      ORIGINAL    : &CIILIB                                                                             
+                     C1G0009I      SUBSTITUTED : IBMPROD.V1R4M0.COB2LIB                                                              
+                     C1G0009I      ORIGINAL    : &C1PRGRP(1,2)                                                                       
+                     C1G0009I      SUBSTITUTED : LO                                                                                  
+                     C1G0009I      ORIGINAL    : &CLELKED                                                                            
+                     C1G0009I      SUBSTITUTED : CEE.SCEELKED                                                                        
+                     C1G0009I      ORIGINAL    : &XOBJLIB1                                                                           
+                     C1G0009I      SUBSTITUTED : NULLFILE                                                                            
+                     C1G0009I      ORIGINAL    : &XOBJLIB1                                                                           
+                     C1G0009I      SUBSTITUTED : NULLFILE                                                                            
+                     C1G0009I      ORIGINAL    : &XOBJLIB2                                                                           
+                     C1G0009I      SUBSTITUTED : NULLFILE                                                                            
+1CA Endevor SCM Version 18.1.00        Copyright (C) 1986-2019 Broadcom. All Rights Reserved.      30SEP21 09:44:21     PAGE     5   
+                                           E N D E V O R   E X E C U T I O N   R E P O R T                                           
+ REQUESTED BY: CUST013                                                                                                               
+                                                                                                                                     
+                                                                                                                                     
+                     C1G0009I      ORIGINAL    : &XOBJLIB2                                                                           
+                     C1G0009I      SUBSTITUTED : NULLFILE                                                                            
+                     C1G0009I      ORIGINAL    : &SDFHLOAD                                                                           
+                     C1G0009I      SUBSTITUTED : CICSSYS.CTS520.GA.CICS.SDFHLOAD                                                     
+                     C1G0009I      ORIGINAL    : &SDSNLOAD                                                                           
+                     C1G0009I      SUBSTITUTED : EOSDB2.DB2C10.SDSNLOAD                                                              
+                     C1G0009I      ORIGINAL    : &PFX..LOADLIB                                                                       
+                     C1G0009I      SUBSTITUTED : PRODUCT.NDVR.MARBLES.MARBLES.D1.LOADLIB                                             
+                     C1G0009I      ORIGINAL    : &TRAINLIB                                                                           
+                     C1G0009I      SUBSTITUTED : CICS.TRAIN.MARBLES.LOADLIB                                                          
+                     C1G0009I      ORIGINAL    : &&C1VIOUNIT                                                                         
+                     C1G0009I      SUBSTITUTED : SYSDA                                                                               
+                     C1G0009I      ORIGINAL    :   S M=&C1ELEMENT                                                                    
+                     C1G0009I      SUBSTITUTED :   S M=MARBLE13                                                                      
+                     C1G0009I      ORIGINAL    : &PFX..LLISTLIB                                                                      
+                     C1G0009I      SUBSTITUTED : PRODUCT.NDVR.MARBLES.MARBLES.D1.LLISTLIB                                            
+                     C1G0009I      ORIGINAL    : &VIO                                                                                
+                     C1G0009I      SUBSTITUTED : SYSDA                                                                               
+                     C1G0009I      ORIGINAL    : &C1EN                                                                               
+                     C1G0009I      SUBSTITUTED : DEV                                                                                 
+                     C1G0009I      ORIGINAL    : &C1S#                                                                               
+                     C1G0009I      SUBSTITUTED : 1                                                                                   
+                     C1G0009I      ORIGINAL    : &SEQLIST                                                                            
+                     C1G0009I      SUBSTITUTED : N                                                                                   
+                     C1G0009I      ORIGINAL    : &#LISTDSN                                                                           
+                     C1G0009I      SUBSTITUTED : PRODUCT.NDVR.MARBLES.MARBLES.MARBLE13.V0100.T0944                                   
+                     C1G0009I      ORIGINAL    : &VIO                                                                                
+                     C1G0009I      SUBSTITUTED : SYSDA                                                                               
+           09:44:21  C1X0012I  STEP INITLIST INVOKING PROGRAM BC1PDSIN                                                               
+           09:44:21  C1X0010I  STEP INITLIST PROGRAM BC1PDSIN COMPLETED, RC=0000                                                     
+           09:44:21  C1X0012I  STEP SYSLIN INVOKING PROGRAM IEBUPDTE                                                                 
+           09:44:21  C1X0010I  STEP SYSLIN PROGRAM IEBUPDTE COMPLETED, RC=0000                                                       
+           09:44:22  C1X0012I  STEP RELINK INVOKING PROGRAM IEWL                                                                     
+           09:44:22  C1X0013I  PARM=LIST,MAP,XREF                                                                                    
+           09:44:22  C1X0010I  STEP RELINK PROGRAM IEWL COMPLETED, RC=0000                                                           
+           09:44:22  C1G0000I     ELEMENT MARBLE13                                                                                   
+           09:44:22  C1G0000I     DATA SET PRODUCT.NDVR.MARBLES.MARBLES.D1.LOADLIB                                                   
+           09:44:22  C1G0134I  ELEMENT FOOTPRINTED IN DATASET                                                                        
+           09:44:22  C1X0012I  STEP COPYCICS INVOKING PROGRAM BSTCOPY                                                                
+           09:44:23  C1X0010I  STEP COPYCICS PROGRAM BSTCOPY COMPLETED, RC=0000                                                      
+           09:44:23  C1G0000I     ELEMENT MARBLE13                                                                                   
+           09:44:23  C1G0000I     DATA SET CICS.TRAIN.MARBLES.LOADLIB                                                                
+           09:44:23  C1G0134I  ELEMENT FOOTPRINTED IN DATASET                                                                        
+           09:44:23  C1X0012I  STEP CONLIST INVOKING PROGRAM CONLIST                                                                 
+           09:44:23  C1X0013I  PARM=STORE                                                                                            
+           09:44:23  C1G0000I     DATA SET PRODUCT.NDVR.MARBLES.MARBLES.D1.LLISTLIB                                                  
+           09:44:23  C1G0000I     MEMBER MARBLE13                                                                                    
+           09:44:23  C1G0132I  ELEMENT VVLL 0100 WRITTEN TO DATA SET                                                                 
+           09:44:23  C1X0010I  STEP CONLIST PROGRAM CONLIST COMPLETED, RC=0000                                                       
+           09:44:23  C1G0000I     ELEMENT MARBLE13                                                                                   
+           09:44:23  C1G0000I     DATA SET PRODUCT.NDVR.MARBLES.MARBLES.D1.LLISTLIB                                                  
+           09:44:23  C1G0134I  ELEMENT FOOTPRINTED IN DATASET                                                                        
+           09:44:23  C1G0000I     ELEMENT MARBLE13                                                                                   
+           09:44:23  C1C0001I  BEGINNING UPDATE OF COMPONENT LIST AT STAGE UNITTEST                                                  
+           09:44:24  SMGR130I  COMPONENT VVLL 0103 CREATED AT LOCATION DEV/1/MARBLES/MARBLES/LNK                                     
+1CA Endevor SCM Version 18.1.00        Copyright (C) 1986-2019 Broadcom. All Rights Reserved.      30SEP21 09:44:24     PAGE     6   
+                                           E N D E V O R   E X E C U T I O N   R E P O R T                                           
+ REQUESTED BY: CUST013                                                                                                               
+                                                                                                                                     
+                                                                                                                                     
+           09:44:24  ACMB022I  ACM INDEX UPDATES COMPLETED:                                                                          
+           09:44:24  ACMB023I          ACM ELEMENTS: 4                                                                               
+           09:44:24  ACMB023I           ACM MEMBERS: 5                                                                               
+           09:44:24  C1G0144I  PROCESSOR GLNK EXECUTION COMPLETED, HIGHEST PROCESSOR STEP RC WAS 0000                                
+           09:44:24  C1G0000I     PATH /u/users/cai/CASoftware/ESCM/EVENTS/                                                          
+           09:44:24  C1E0146I  THE END-2-END LOGGING PATH WAS NOT FOUND, LOGGING SKIPPED.                                            
+           09:44:24  C1G0200I  ELEMENT ACTION REQUEST PROCESSING COMPLETED, HIGHEST ENDEVOR RC WAS 0000                              
+1CA Endevor SCM Version 18.1.00        Copyright (C) 1986-2019 Broadcom. All Rights Reserved.      30SEP21 09:44:24     PAGE     1   
+                                      E N D E V O R   A C T I O N   S U M M A R Y   R E P O R T                                      
+ REQUESTED BY: CUST013                                                                                                               
+                                                                                                                                     
+                                                                                                                                     
+                                 PROC  NDVR   +------------  INVENTORY  INFORMATION  -----------+  ACTION   ACTION   STMT    SCL     
+           ACTION    ELEMENT      RC    RC    ENVIRONMENT   SYSTEM    SUBSYSTEM   TYPE     STAGE    TIME    NUMBER  NUMBER WRITTEN   
+           GENERATE  MARBLE13    0000  0000   DEV           MARBLES   MARBLES     LNK        1    09:44:18       1       1           
+           END OF EXECUTION LOG - HIGHEST ENDEVOR RC = 0000                                                                          

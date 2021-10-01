@@ -1,0 +1,98 @@
+#
+# Should have already been done for you
+#
+npm install
+npm install -g gulp-cli
+
+# 
+# Create your profiles
+#
+gulp setupProfiles
+
+#
+# Verify Setup
+#
+zowe profiles list zosmf
+zowe zosmf check status
+zowe files list ds "CUST013.MARBLES.*"
+
+#
+# Validate Endevor Profile
+#
+zowe endevor list elements
+
+#
+# Validate CICS Profile
+#
+zowe cics get resource CICSProgram -c "PROGRAM=MARB*" --rft table --rfh --rff program status length
+
+#
+# Validate DB2 Profile
+#
+zowe db2 execute sql -q "SELECT * FROM EVENT.MARBLE"
+
+#
+# Update Endevor Elements
+#
+zowe endevor ret element MARBLE13 --type COBOL --tf MARBLE13.cbl --os
+
+#
+# Edit the code in Che, then update it
+#
+zowe endevor update element MARBLE13 --type COBOL --ff MARBLE13.cbl --os
+
+#
+# Generate the Elements manually
+#
+zowe endevor generate element MARBLE13 --type COBOL --os
+zowe endevor generate element MARBLE13 --type LNK --os
+
+#
+# Start Using Gulp.
+# 
+# gulp will list the available commands
+#
+gulp build-cobol
+gulp build-lnk
+
+#
+# After combining the gulp build-cobol and build-lnk tasts
+#
+gulp build
+
+#
+# After completing gulp deploy tasks
+#
+gulp deploy
+
+#
+# Manually verify
+#
+zowe console issue command "F CICSTRN1,MB13 CRE COLOR 1 2" --cn CUST013
+zowe db2 execute sql -q "SELECT * FROM EVENT.MARBLE"
+
+# 
+# Run automated tests
+# 
+npm test
+
+
+# Note the following commands will deploy the code manually.
+# They are not run at this time, due to time constraints.
+# The gulp file will run these commands for you.
+#
+# List Members
+zowe files list am "PRODUCT.NDVR.MARBLES.MARBLES.D1.LOADLIB"
+zowe files list am "PRODUCT.NDVR.MARBLES.MARBLES.D1.DBRMLIB"
+# Copy LoadLib and DBRM Lib
+zowe jobs submit ds "CUST013.MARBLES.JCL(MARBCOPY)"  --vasc
+# Bind and Grant
+zowe jobs submit ds "CUST013.MARBLES.JCL(MARBIND)" --vasc
+# CICS Refresh
+zowe cics refresh program MARBLE13
+# Execute CICS program
+zowe console issue command "F CICSTRN1,MB13 CRE COLOR 1 1" --cn CUST013
+# Check DB
+zowe db2 execute sql -q "select * from EVENT.MARBLE"
+
+

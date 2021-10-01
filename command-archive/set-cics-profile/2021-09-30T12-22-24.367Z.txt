@@ -1,0 +1,6 @@
+Error:
+null
+StdErr:
+
+Data:
+The default profile for cics set to zw
